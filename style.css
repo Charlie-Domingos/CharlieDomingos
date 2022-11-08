@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: inset 0px 0px 4px rgba(239, 95, 95, 0.9)
+}
+
+body {
+  background-color: #000000;
+  
+}
+
+a {
+  color: #ccc;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Roboto' sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 35px 0px;
+  justify-content: space-around;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#set-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #set-mobile {
+    display: block;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    height: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    /*pega o valor total da pagina e diminiu 70px do top*/
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+  }
+
+  #set-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+
+  #hamb {
+    width: 20px;
+    border-top: solid 2px #000000;
+    display: block;
+  }
+
+  #hamb::after,
+  #hamb::before {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: black;
+    margin-top: 5px;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  #nav.active #hamb {
+    border-top: transparent;
+  }
+
+  nav.active #hamb::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamb::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  align-items: center;
+}
+
+.primary-info {
+  display: flex;
+  align-items: center;
+}
+
+.primary-info h2 {
+  color: #e7e7e7;
+  font-size: 80px;
+  font-weight: 700;
+}
