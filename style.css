@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  box-shadow: inset 0px 0px 4px rgba(239, 95, 95, 0.9)
+  /*box-shadow: inset 0px 0px 4px rgba(239, 95, 95, 0.9)*/
 }
 
 body {
   background-color: #000000;
+  max-width: 100%
   
 }
 
@@ -15,12 +16,21 @@ a {
   color: #ccc;
   font-weight: 600;
   text-decoration: none;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.2);
+  color: #ff5757;
+  text-shadow:  0 0 7px rgb(231, 84, 84),
+  0 0 10px rgb(250, 112, 112),
+  0 0 21px rgb(211, 80, 80),
+  0 0 42px rgb(240, 134, 102),
+  0 0 82px #0fa,
+  0 0 92px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa;;
 }
+
 
 #logo {
   font-size: 1.5rem;
@@ -63,7 +73,8 @@ a:hover {
     top: 70px;
     right: 0px;
     height: 0px;
-    background: #e7e7e7;
+    padding-top: 30px;
+    background: #000000;
     transition: 0.6s;
     visibility: hidden;
     overflow-y: hidden;
@@ -92,9 +103,22 @@ a:hover {
 
   #hamb {
     width: 20px;
-    border-top: solid 2px #000000;
+    border-top: solid 2px #ffffff;
     display: block;
   }
+
+  #hamb:hover {
+    color: #ff5757;
+    text-shadow:  0 0 7px rgb(231, 84, 84),
+    0 0 10px rgb(250, 112, 112),
+    0 0 21px rgb(211, 80, 80),
+    0 0 42px rgb(240, 134, 102),
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;;
+  }
+  
 
   #hamb::after,
   #hamb::before {
@@ -102,7 +126,7 @@ a:hover {
     content: '';
     width: 20px;
     height: 2px;
-    background: black;
+    background: rgb(253, 253, 253);
     margin-top: 5px;
     transition: 0.4s;
     position: relative;
@@ -125,17 +149,24 @@ a:hover {
 .info {
   display: flex;
   flex-direction: column;
-  max-width: 90%;
   align-items: center;
 }
 
 .primary-info {
   display: flex;
   align-items: center;
+  margin-top: 60px;
 }
 
 .primary-info h2 {
   color: #e7e7e7;
   font-size: 80px;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.primary-write p {
+  color: #e7e7e7;
+  font-size: 30px;
+
 }
