@@ -43,6 +43,7 @@ a:hover {
   align-items: center;
   flex-direction: row;
   padding: 35px 0px;
+  margin-top: 20px;
   justify-content: space-around;
 }
 
@@ -70,7 +71,7 @@ a:hover {
     display: block;
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 90px;
     right: 0px;
     height: 0px;
     padding-top: 30px;
@@ -146,23 +147,35 @@ a:hover {
   }
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .primary-info {
   display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
   align-items: center;
   margin-top: 60px;
+  margin-bottom: 200px;
+
 }
 
-.primary-info h2 {
+.primary-info h1 {
   color: #e7e7e7;
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.primary-write {
+  width: 49rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 .primary-write p {
@@ -170,3 +183,73 @@ a:hover {
   font-size: 30px;
 
 }
+
+.skills {
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.partSkills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+  height: 300px;
+  align-items: center;
+  
+}
+
+.skills h2 {
+  padding-top: 30px;
+  text-align: center;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+li img {
+  display: flex;
+}
+
+li p {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  
+}
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 200px; 
+  max-width: 49rem;
+
+}
+
+.aboutme h1{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+
+.container-text p{
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  max-width: 300px;
+}
+
+
+
+
+
