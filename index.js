@@ -8,3 +8,27 @@ function toggleMenu(event) {
 
 setmobile.addEventListener('click', toggleMenu)
 setmobile.addEventListener('touchstart', toggleMenu)
+
+const slider = tns({
+  container: '.partSkills',
+  loop: true,
+  controls: false,
+  controlsPosition: 'bottom', // move o posicionamento dos botões
+  navPosition: 'bottom', 
+  mouseDrag: true, //habilita para puxar com o mouse
+  responsive: {
+    0 : {
+      items: 1, // seta a quantidade de icones na tela responsivo
+    },
+    320: {
+      items : 2,
+    },
+    450: {
+      items : 3,
+    },
+    768: {
+      items : 4,
+    }
+  }
+
+})
