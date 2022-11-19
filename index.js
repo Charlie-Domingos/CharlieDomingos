@@ -13,22 +13,24 @@ const slider = tns({
   container: '.partSkills',
   loop: true,
   controls: false,
-  controlsPosition: 'bottom', // move o posicionamento dos botões
-  navPosition: 'bottom', 
-  mouseDrag: true, //habilita para puxar com o mouse
+  controlsPosition: 'bottom',
+  navPosition: 'bottom',
+  mouseDrag: true,
   responsive: {
-    0 : {
-      items: 1, // seta a quantidade de icones na tela responsivo
-    },
-    320: {
-      items : 2,
-    },
-    450: {
-      items : 3,
+    1000: {
+      items: 7
     },
     768: {
-      items : 4,
+      items: 6
+    },
+    720: {
+      irems: 3
+    },
+    480: {
+      items: 3
+    },
+    320: {
+      items: 2
     }
   }
-
 })
