@@ -1,3 +1,5 @@
+// Mobile Toggle
+
 const setmobile = document.getElementById('set-mobile')
 
 function toggleMenu(event) {
@@ -9,6 +11,7 @@ function toggleMenu(event) {
 setmobile.addEventListener('click', toggleMenu)
 setmobile.addEventListener('touchstart', toggleMenu)
 
+// MObile Slider
 const slider = tns({
   container: '.partSkills',
   loop: true,
@@ -32,5 +35,27 @@ const slider = tns({
     320: {
       items: 2
     }
+  }
+})
+
+// Mostrar conteudo gradativamente
+
+window.sr = ScrollReveal({ reset: true })
+
+ScrollReveal().reveal('.skills', {
+  delay: 400,
+  rotate: {
+    x: 100,
+    Y: 0,
+    z: 0
+  }
+})
+
+ScrollReveal().reveal('.projects', {
+  delay: 600,
+  rotate: {
+    x: 100,
+    Y: 0,
+    z: 0
   }
 })

@@ -17,7 +17,7 @@ a {
   font-family: 'Roboto', sans-serif;
 }
 
-a:hover {
+#menu a:hover {
   color: #ff5757;
   text-shadow: 0 0 7px rgb(231, 84, 84), 0 0 10px rgb(250, 112, 112),
     0 0 21px rgb(211, 80, 80), 0 0 42px rgb(240, 134, 102),
@@ -55,7 +55,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   #set-mobile {
     display: block;
   }
@@ -144,8 +144,16 @@ a:hover {
 
 .primary-info h1 {
   color: #e7e7e7;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+.primary-info span {
+  color: #ff5757;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 4rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -155,8 +163,6 @@ img {
 
 .primary-write {
   width: 49rem;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 p {
@@ -164,13 +170,29 @@ p {
 }
 
 .primary-write p {
-  color: #e7e7e7;
+  color: #828282;
   font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.primary-write a {
+  border-radius: 5px;
+  padding: 10px;
+  width: 65%;
+  cursor: pointer;
+  font-size: 17px;
+  background: none;
+  color: rgb(255, 255, 255);
+  border: 2px solid #ff5757;
+}
+
+.primary-info a:hover {
+  background-color: #ff5757;
 }
 
 .skills {
   height: 400px;
-  background-color: white;
+  background-color: #09090b;
   display: flex;
   flex-direction: column;
 }
@@ -186,7 +208,7 @@ p {
 h2 {
   padding-top: 30px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
   font-weight: 600;
@@ -205,6 +227,7 @@ li p {
   display: flex;
   justify-content: center;
   width: 164px;
+  color: #ffffff;
 }
 
 /* Config Slider */
@@ -231,7 +254,11 @@ li p {
 /* Project */
 
 .projects {
-  background-color: #ffffff;
+  background-color: #000000;
+}
+
+.projects h2 {
+  color: #ffffff;
 }
 
 .cards {
