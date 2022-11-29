@@ -43,18 +43,36 @@ const slider = tns({
 window.sr = ScrollReveal({ reset: true })
 
 ScrollReveal().reveal('.skills', {
-  delay: 400,
+  delay: 800,
   rotate: {
-    x: 100,
+    x: 80,
     Y: 0,
     z: 0
   }
 })
 
 ScrollReveal().reveal('.projects', {
-  delay: 600,
+  delay: 800,
   rotate: {
-    x: 100,
+    x: 80,
+    Y: 0,
+    z: 0
+  }
+})
+
+ScrollReveal().reveal('.container-text', {
+  delay: 800,
+  rotate: {
+    x: 80,
+    Y: 0,
+    z: 0
+  }
+})
+
+ScrollReveal().reveal('.img-about', {
+  delay: 800,
+  rotate: {
+    x: 80,
     Y: 0,
     z: 0
   }
