@@ -201,6 +201,7 @@ p {
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  margin-left: 22px;
   height: 300px;
   align-items: center;
 }
@@ -255,6 +256,7 @@ li p {
 
 .projects {
   background-color: #000000;
+  margin-bottom: 100px;
 }
 
 .projects h2 {
@@ -334,20 +336,26 @@ li p {
 .aboutme {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-  margin-bottom: 200px;
+  gap: 60px;
+  background-color: #09090b;
 }
 
 .container-text p {
+  font-size: 20px;
+  line-height: 2.5rem;
+  max-width: 600px;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
-  max-width: 300px;
 }
 
 .aboutme h1 {
+  margin-bottom: 50px;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
+  font-weight: 800;
 }
