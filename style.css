@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000000;
   max-width: 100%;
@@ -25,7 +29,7 @@ body {
 }
 
 #menu a:hover {
-  color: #ff5757;
+  color: rgba(255, 87, 87, 1);
   text-shadow: 0 0 7px rgb(231, 84, 84), 0 0 10px rgb(250, 112, 112),
     0 0 21px rgb(211, 80, 80), 0 0 42px rgb(240, 134, 102),
     0 0 82px rgb(224, 69, 121), 0 0 92px rgb(225, 41, 124), 0 0 102px #0fa,
@@ -96,7 +100,7 @@ body {
   }
 
   #hamb:hover {
-    color: #ff5757;
+    color: rgba(255, 87, 87, 1);
     text-shadow: 0 0 7px rgb(231, 84, 84), 0 0 10px rgb(250, 112, 112),
       0 0 21px rgb(211, 80, 80), 0 0 42px rgb(240, 134, 102), 0 0 82px #0fa,
       0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
@@ -134,7 +138,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
+  gap: 40px;
 }
 
 .primary-info h1 {
@@ -145,7 +150,7 @@ body {
 }
 
 .primary-info span {
-  color: #ff5757;
+  color: rgba(255, 87, 87, 1);
   font-size: 50px;
   font-weight: 600;
   line-height: 4rem;
@@ -157,7 +162,7 @@ img {
 }
 
 .primary-write {
-  width: 49rem;
+  width: 30rem;
 }
 
 p {
@@ -178,11 +183,11 @@ p {
   font-size: 17px;
   background: none;
   color: rgb(255, 255, 255);
-  border: 2px solid #ff5757;
+  border: 2px solid rgba(255, 87, 87, 1);
 }
 
 .primary-info a:hover {
-  background-color: #ff5757;
+  background-color: rgba(255, 87, 87, 1);
 }
 
 .skills {
@@ -310,7 +315,7 @@ li p {
   height: 37px;
   margin-bottom: 20px;
   text-align: center;
-  background-color: #ff5757;
+  background-color: rgba(255, 87, 87, 1);
 
   border: none;
   font-size: 13pt;
@@ -339,7 +344,7 @@ li p {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  padding-bottom: 50px;
   gap: 60px;
   background-color: #09090b;
 }
@@ -361,7 +366,7 @@ li p {
 }
 
 .aboutme span {
-  color: #ff5757;
+  color: rgba(255, 87, 87, 1);
 }
 
 /* CONTACT */
@@ -418,5 +423,5 @@ footer {
 }
 
 .copyright a:hover {
-  color: #ff5757;
+  color: rgba(255, 87, 87, 1);
 }

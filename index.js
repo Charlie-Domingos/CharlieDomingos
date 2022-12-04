@@ -77,3 +77,30 @@ ScrollReveal().reveal('.img-about', {
     z: 0
   }
 })
+
+ScrollReveal().reveal('.imggmail', {
+  delay: 800,
+  rotate: {
+    x: 80,
+    Y: 0,
+    z: 0
+  }
+})
+
+ScrollReveal().reveal('.imgmaps', {
+  delay: 800,
+  rotate: {
+    x: 80,
+    Y: 0,
+    z: 0
+  }
+})
+
+ScrollReveal().reveal('.imgwhats', {
+  delay: 800,
+  rotate: {
+    x: 80,
+    Y: 0,
+    z: 0
+  }
+})
