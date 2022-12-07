@@ -431,6 +431,7 @@ footer {
 .copyright {
   font-family: 'Roboto', sans-serif;
   color: #828282;
+  padding: 0 24px;
 }
 
 .copyright a {
