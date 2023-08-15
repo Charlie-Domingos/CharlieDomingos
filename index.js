@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Mostrar conteudo gradativamente
 
+
 function scrollToContato() {
   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
 }

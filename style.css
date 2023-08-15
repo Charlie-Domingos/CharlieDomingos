@@ -97,14 +97,14 @@ body.dark {
   color: #828282;
   font-weight: 600;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
   overflow: hidden; /* Para esconder o ::before inicialmente */
 }
 
 /* Efeito de linha ao passar o mouse */
 .menu a::before {
-  content: '';
+  content: "";
   width: 0;
   height: 2px;
   position: absolute;
@@ -214,7 +214,7 @@ body.dark {
   #hamb::after,
   #hamb::before {
     display: block;
-    content: '';
+    content: "";
     width: 20px;
     height: 2px;
     background: #ffffff;
@@ -258,10 +258,16 @@ body.dark {
   height: 68vh;
 }
 
-h1 {
-  font-size: 2.5rem;
+.primary-h1 {
+  font-size: 2rem;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.body-h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1.dark {
@@ -273,7 +279,7 @@ h1.dark {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 4rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .primary-info img {
@@ -282,7 +288,7 @@ h1.dark {
 
 .primary-write {
   width: 30rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   max-width: 100%;
 }
@@ -433,7 +439,7 @@ li p {
 }
 
 .btns-card a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: block;
   align-items: center;
   padding: 8px;
@@ -446,6 +452,10 @@ li p {
 }
 
 /* Charlie About */
+
+.about {
+  max-width: 72%;
+}
 
 .container-text {
   display: flex;
@@ -461,7 +471,7 @@ li p {
   font-size: 20px;
   line-height: 2.5rem;
   max-width: 600px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .icons {
@@ -519,7 +529,7 @@ footer {
 }
 
 .copyright {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #828282;
   padding: 0 24px;
 }
