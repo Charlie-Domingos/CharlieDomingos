@@ -15,68 +15,63 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="dark">
   <div class="container">
     <header class="header">
       <a id="logo" href=""><img src="./assets/charlieLogo.png" /></a>
-      <nav id="nav">
-        <button id="set-mobile">
+      <nav id="nav" class="nav">
+        <button id="set-mobile" class="set-mobile">
           <span id="hamb"></span>
         </button>
-        <lu id="menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#nav-skills">TECNOLOGIAS</a></li>
-          <li><a href="#nav-project">PROJETOS</a></li>
-          <li><a href="#nav-about">SOBRE</a></li>
-          <li><a href="#nav-contact">CONTATOS</a></li>
-        </lu>
+        <ul id="menu" class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#nav-project">Projetos</a></li>
+          <li><a href="#nav-about">Sobre</a></li>
+          <div>
+            <input type="checkbox" class="checkbox" id="themeToggle" />
+            <label class="label" for="themeToggle">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+          <button class="btn-contact" onclick="scrollToContato()">Contato</button>
+        </ul>
+
       </nav>
     </header>
     <section class="primary-info">
       <div class="primary-write">
-        <h1>Olá, eu sou o</h1><span>Charlie Domingos</span>
-        <p>Desenvolvedor front-end</p>
-        <div class="content-cv">
-          <span></span>
-          <a href="assets/CV-Charlie_Domingos.pdf" download>Download CV</a>
-          <img src="./assets/download-icon.png" alt="" />
+        <div>
+          <h1>Olá, eu sou o</h1><span>Charlie Domingos</span>
+          <p>Desenvolvedor front-end</p>
+        </div>
+        <div class="btns-primary">
+          <div class="content-cv">
+            <a href="assets/CV-Charlie_Domingos.pdf" download>
+              <p>Download CV</p>
+            </a>
+            <i class="fas fa-download"></i>
+          </div>
+          <button class="btn-contact" onclick="scrollToContato()">Contato</button>
         </div>
       </div>
 
-      <img src="assets/icon-info.svg" />
-    </section>
-
-    <section id="nav-skills" class="skills">
-      <h2>Tecnologias</h2>
-      <ul class="partSkills">
-        <li><img src="./assets/icon-html.png" alt="imagem icone html">
-          <p>HTML</p>
-        </li>
-        <li><img src="./assets/icon-css.png" alt="imagem icone css">
-          <p>CSS</p>
-        </li>
-        <li><img src="./assets/icon-js.png" alt="imagem icone javascript">
-          <p>JAVASCRIPT</p>
-        </li>
-        <li><img src="./assets/icon-bootstrap.png" alt="imagem icone bootstrap">
-          <p>BOOTSTRAP</p>
-        </li>
-        <li><img src="./assets/icon-github.png" alt="imagem icone github">
-          <p>GITHUB</p>
-        </li>
-        <li><img src="./assets/icon-mysql.png" alt="imagem icone mysql">
-          <p>MYSQL</p>
-        </li>
-        <li><img src="./assets/icon-linux.png" alt="imagem icone linux">
-          <p>LINUX</p>
-        </li>
-
-      </ul>
+      <img src="./assets/Charlie-domingos-color.png" />
     </section>
 
     <section id="nav-project" class="projects">
-      <h2>Projetos</h2>
-
+      <div class="tittle-section">
+        <h1>Projetos</h1>
+        <div class="tab-divider"></div>
+      </div>
+      <div class="header-project">
+        <div class="info-project">
+          <p>Alguns dos projetos acadêmicos que realizei para praticar meus conhecimentos.</p>
+        </div>
+        <div>
+        </div>
+      </div>
       <div class="cards">
         <div class="card card1">
           <div class="card-header">
@@ -84,26 +79,11 @@
           </div>
 
           <div class="card-body">
-            <h3 class="card-local">Payment Posting - CRUD</h3>
+            <h3 class="card-tittle">Payment Posting - CRUD</h3>
           </div>
 
-          <div class="card-footer">
-            <a href="https://github.com/Charlie-Domingos/PaymentPosting">Ver Mais</a>
-          </div>
-
-        </div>
-
-        <div class="card card2">
-          <div class="card-header">
-            <img class="card-img" src="./assets/passwd.png" alt="imagem projeto senha">
-          </div>
-
-          <div class="card-body">
-            <h3 class="card-local">Gerador de Senhas</h3>
-          </div>
-
-          <div class="card-footer">
-            <a href="https://github.com/Charlie-Domingos/Front_Dev/tree/main/Gerador_Senhas">Ver Mais</a>
+          <div class="btns-card">
+            <a target="_blank" href="https://charlie-domingos.github.io/PaymentPosting.github.io/">Ver mais</a>
           </div>
 
         </div>
@@ -114,69 +94,101 @@
           </div>
 
           <div class="card-body">
-            <h3 class="card-local">GRID de notícias</h3>
+            <h3 class="card-tittle">GRID de notícias</h3>
           </div>
 
-          <div class="card-footer">
-            <a href="https://github.com/Charlie-Domingos/Front_Dev">Ver Mais</a>
+          <div class="btns-card">
+            <a target="_blank" href="https://charlie-domingos.github.io/Front_Dev.github.io/">Ver mais</a>
           </div>
-
         </div>
 
-        <div class="card card4">
+        <div class="card card3">
           <div class="card-header">
-            <img class="card-img" src="./assets/linktree.png" alt="imagem projeto linktree">
+            <img class="card-img" src="" alt="">
           </div>
 
           <div class="card-body">
-            <h3 class="card-local">LINKTREE</h3>
+            <h3 class="card-tittle"></h3>
           </div>
 
-          <div class="card-footer">
-            <a href="https://github.com/Charlie-Domingos/linktree">Ver Mais</a>
+          <div class="btns-card">
+            <a target="_blank" href="#">Ver mais</a>
           </div>
-
         </div>
+
       </div>
+  </div>
 
-    </section>
+  </section>
 
-    <section id="nav-about" class="aboutme">
-      <div class="container-text">
-        <h1>QUEM SOU<span>.</span></h1>
+  <section id="nav-about" class="aboutme">
+    <div class="tittle-section">
+      <h1>Quem sou</h1>
+      <div class="tab-divider"></div>
+    </div>
+    <div class="container-text">
+      <div class="text-icon">
         <p>Apaixonado por tecnologia, atráves dela resolvo alguns problemas usando programação. Estou iniciando
           minha carreira em desenvolvimento de software, atualmente estou me aprimorando em tecnologias front-end como
           angular, javascript, API. Sou determinado e curioso todo conhecimento que obtive foi estudando. Quer
           me conhecer melhor? Entra em contato comigo.
+          <div class="icons">
+            <div class="icon-skills">
+              <img src="./assets/html-124-svgrepo-com.svg">
+            </div>
+            <div class="icon-skills">
+              <img src="./assets/css3-02-svgrepo-com.svg">
+            </div>
+            <div class="icon-skills">
+              <img src="./assets/js-square-svgrepo-com.svg">
+            </div>
+            <div class="icon-skills">
+              <img src="./assets/bootstrap-fill-svgrepo-com.svg">
+            </div>
+            <div class="icon-skills">
+              <img src="./assets/mysql-svgrepo-com.svg">
+            </div>
+            <div class="icon-skills">
+              <img src="./assets/linux-svgrepo-com.svg">
+            </div>
+            <div class="icon-skills">
+              <img src="./assets/github-142-svgrepo-com.svg">
+            </div>
+          </div>
         </p>
       </div>
       <img class="img-about" src="./assets/CharlieEdit.png" alt="Foto de charlie augusto">
-    </section>
+    </div>
 
-    <section id="nav-contact" class="contact-info">
-      <h2>Contatos</h2>
-      <div class="contact">
-        <div class="icon-contact">
-          <a class="imggmail" href="mailto:charlie.learning11@gmail.com?"><img src="./assets/icons8-gmail.svg">
-            <p>Charliedev022@gmail.com</p>
-          </a>
-        </div>
+  </section>
 
-
-        <div class="icon-contact">
-          <a class="imgmaps"><img src="./assets/icon-google-maps.svg">
-            <p>Brasil <br>São Paulo, Barueri</p>
-          </a>
-        </div>
-
-        <div class="icon-contact">
-          <a class="imgwhats" target="_blank" href="https://wa.me/5511954079794"><img src="./assets/icon-whatsapp.svg">
-            <p>(+55) 11 95407-9794</p>
-          </a>
-        </div>
-
+  <section id="contact" class="contact-info">
+    <div class="tittle-section">
+      <h1>Contatos</h1>
+      <div class="tab-divider"></div>
+    </div>
+    <div class="contact">
+      <div class="icon-contact">
+        <a class="imggmail" href="mailto:charlie.learning11@gmail.com?"><img src="./assets/icons8-gmail.svg">
+          <p>Charliedev022@gmail.com</p>
+        </a>
       </div>
-    </section>
+
+
+      <div class="icon-contact">
+        <a class="imgmaps"><img src="./assets/icon-google-maps.svg">
+          <p>Brasil <br>São Paulo</p>
+        </a>
+      </div>
+
+      <div class="icon-contact">
+        <a class="imgwhats" target="_blank" href="https://wa.me/5511954079794"><img src="./assets/icon-whatsapp.svg">
+          <p>(+55) 11 95407-9794</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
   </div>
   <footer>
     <div class="info-footer">
@@ -185,8 +197,6 @@
             href="mailto:charlie.learning11@gmail.com?">Charliedev022@gmail.com</a></span>
       </div>
       <div class="icon-footer">
-        <a target="_blank" href="https://www.instagram.com/charliezio/"><img src="./assets/icon-instagram.png"></a>
-
         <a target="_blank" href="https://www.linkedin.com/in/charlie-augusto-devops/">
           <img src="./assets/icon-linkedin.png"></a>
 
@@ -199,6 +209,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="/index.js"></script>
+  <script src="https://kit.fontawesome.com/4758fee3e6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

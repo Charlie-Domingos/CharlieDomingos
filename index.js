@@ -11,34 +11,34 @@ function toggleMenu(event) {
 setmobile.addEventListener('click', toggleMenu)
 setmobile.addEventListener('touchstart', toggleMenu)
 
-// MObile Slider
-const slider = tns({
-  container: '.partSkills',
-  loop: true,
-  controls: false,
-  controlsPosition: 'bottom',
-  navPosition: 'bottom',
-  mouseDrag: true,
-  responsive: {
-    1000: {
-      items: 7
-    },
-    768: {
-      items: 6
-    },
-    720: {
-      irems: 3
-    },
-    480: {
-      items: 3
-    },
-    320: {
-      items: 2
-    }
+// Dark mode
+
+const themeToggle = document.getElementById('themeToggle')
+const body = document.body
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark')
+  // Salvar a preferência do usuário em localStorage ou cookies
+  if (body.classList.contains('dark')) {
+    localStorage.setItem('theme', 'dark')
+  } else {
+    localStorage.setItem('theme', 'light')
+  }
+})
+
+// Verificar a preferência do usuário ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme')
+  if (savedTheme === 'dark') {
+    body.classList.add('dark')
   }
 })
 
 // Mostrar conteudo gradativamente
+
+function scrollToContato() {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+}
 
 window.sr = ScrollReveal({ reset: true })
 
