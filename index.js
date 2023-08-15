@@ -11,6 +11,14 @@ function toggleMenu(event) {
 setmobile.addEventListener('click', toggleMenu)
 setmobile.addEventListener('touchstart', toggleMenu)
 
+const menuOptions = document.querySelectorAll('#nav ul li a')
+
+menuOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    nav.classList.remove('active')
+  })  
+});
+
 // Dark mode
 
 const themeToggle = document.getElementById('themeToggle')
