@@ -1,8 +1,8 @@
 ---
 name: Portfólio Charlie
-about: Reporte um bug.
-title: "[BUG]"
-labels: bug
+about: Reporte uma melhoria para meu portfólio.
+title: "[IMPROVE]"
+labels: IMPROVE
 assignees: ''
 
 ---
