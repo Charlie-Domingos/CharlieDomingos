@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
@@ -20,26 +19,27 @@
       <a id="logo" href=""><img src="./assets/charlieLogo.png" /></a>
       <nav id="nav" class="nav">
         <button id="set-mobile" class="set-mobile">
-          <span id="hamb"></span>
+          <div id="hamb" class="hamb"></div>
         </button>
         <ul id="menu" class="menu">
-          <li><a href="#">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#nav-project">Projetos</a></li>
           <li><a href="#nav-about">Sobre</a></li>
           <div>
             <input type="checkbox" class="checkbox" id="themeToggle" />
-            <label class="label" for="themeToggle">
+            <label for="themeToggle" class="label">
               <i class="fas fa-moon"></i>
               <i class="fas fa-sun"></i>
               <div class="ball"></div>
             </label>
+            
           </div>
-          <button class="btn-contact" onclick="scrollToContato()">Contato</button>
+          <button id="btn-contact" class="btn-contact" onclick="scrollToContato()">Contato</button>
         </ul>
 
       </nav>
     </header>
-    <section class="primary-info">
+    <section id="home" class="primary-info">
       <div class="primary-write">
         <div>
           <h1 class="primary-h1">Olá, eu sou o<br><span>Charlie Domingos</span><p>Desenvolvedor front-end</p></h1>
@@ -151,7 +151,7 @@
               </div>
             </p>
           </div>
-          <!--<img class="img-about" src="./assets/CharlieEdit.png" alt="Foto de charlie augusto">-->
+          <!-- <img class="img-about" src="./assets/CharlieEdit.png" alt="Foto de charlie augusto"> -->
         </div>
     
       </section>
@@ -183,7 +183,7 @@
     
         </div>
       </section>
-      </div>
+    </div>
   </div>
 
   </section>
@@ -204,7 +204,6 @@
     </div>
   </footer>
 
-  <!-- Script respon[avel pelo slideCarrosel -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./index.js"></script>
   <script src="https://kit.fontawesome.com/4758fee3e6.js" crossorigin="anonymous"></script>

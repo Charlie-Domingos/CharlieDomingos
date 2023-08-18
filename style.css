@@ -14,7 +14,6 @@ body {
   background-color: #f0f0f0;
   color: #333;
   transition: background 0.2s linear;
-  
 }
 
 /* Estilos para o tema dark */
@@ -101,7 +100,7 @@ body.dark {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* Efeito de linha ao passar o mouse */
@@ -209,14 +208,49 @@ body.dark {
 
   /**MENU HAMBURGUER**/
 
-  #hamb {
+  /* #hamb {
     width: 20px;
     border-top: solid 2px #ffffff;
     display: block;
+  } */
+
+  .hamb {
+    width: 20px;
+    border-top: solid 2px #000000;
+    display: block;
+    height: 2px;
+    margin: 20px auto;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  body.dark #hamb {
+    border-top: solid 2px #ffffff;
   }
 
   #hamb::after,
   #hamb::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #000000;
+    margin-top: 5px;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  body.dark #hamb::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #ffffff;
+    margin-top: 5px;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  body.dark #hamb::before {
     display: block;
     content: "";
     width: 20px;
