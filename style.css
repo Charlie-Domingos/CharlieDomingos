@@ -98,14 +98,14 @@ body.dark {
   color: #828282;
   font-weight: 600;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   overflow: hidden;
 }
 
 /* Efeito de linha ao passar o mouse */
 .menu a::before {
-  content: "";
+  content: '';
   width: 0;
   height: 2px;
   position: absolute;
@@ -119,10 +119,8 @@ body.dark {
   width: 100%; /* Largura completa ao passar o mouse */
 }
 
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffffff;
+span {
+  color: #ff5757;
 }
 
 #menu {
@@ -169,7 +167,7 @@ body.dark {
     display: block;
     position: absolute;
     width: 100%;
-    top: 100px;
+    top: 75px;
     right: 0px;
     height: 0px;
     padding-top: 30px;
@@ -208,12 +206,6 @@ body.dark {
 
   /**MENU HAMBURGUER**/
 
-  /* #hamb {
-    width: 20px;
-    border-top: solid 2px #ffffff;
-    display: block;
-  } */
-
   .hamb {
     width: 20px;
     border-top: solid 2px #000000;
@@ -230,7 +222,7 @@ body.dark {
   #hamb::after,
   #hamb::before {
     display: block;
-    content: "";
+    content: '';
     width: 20px;
     height: 2px;
     background: #000000;
@@ -241,7 +233,7 @@ body.dark {
 
   body.dark #hamb::after {
     display: block;
-    content: "";
+    content: '';
     width: 20px;
     height: 2px;
     background: #ffffff;
@@ -252,7 +244,7 @@ body.dark {
 
   body.dark #hamb::before {
     display: block;
-    content: "";
+    content: '';
     width: 20px;
     height: 2px;
     background: #ffffff;
@@ -299,13 +291,14 @@ body.dark {
 .primary-h1 {
   font-size: 2rem;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.body-h1 {
-  font-size: 1.5rem;
+.body-h1,
+.header-h1 {
+  font-size: 2rem;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1.dark {
@@ -317,7 +310,7 @@ h1.dark {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 4rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .primary-info img {
@@ -326,7 +319,7 @@ h1.dark {
 
 .primary-write {
   width: 30rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   max-width: 100%;
 }
@@ -367,14 +360,15 @@ h1.dark {
 }
 
 .primary-info .content-cv:hover {
-  background-color: #f56565;
+  background-color: #ee2525;
 }
 
 .tab-divider {
   flex-grow: 1;
   height: 1px;
-  background-color: #828282; /* Cor da linha */
+  background-color: #828282;
   max-width: 72%;
+  margin-left: 10px;
 }
 
 ul {
@@ -429,7 +423,7 @@ li p {
   flex-wrap: wrap;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-  transition: 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 .card-header {
@@ -472,12 +466,23 @@ li p {
   transition: all 0.3s ease-in;
 }
 
-.btns-card:hover {
-  background-color: #f56565;
+.btns-card-construct {
+  width: 38%;
+  height: 37px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: #908e8e;
+
+  border: none;
+  font-size: 13pt;
+  cursor: pointer;
+
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
 }
 
-.btns-card a {
-  font-family: "Roboto", sans-serif;
+.btns-card-construct a {
+  font-family: 'Roboto', sans-serif;
   display: block;
   align-items: center;
   padding: 8px;
@@ -485,8 +490,17 @@ li p {
   font-weight: 400;
 }
 
-.card:hover {
-  transform: scale3d(1.1, 1.1, 1);
+.btns-card:hover {
+  background-color: #ee2525;
+}
+
+.btns-card a {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  align-items: center;
+  padding: 8px;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 /* Charlie About */
@@ -505,7 +519,7 @@ li p {
   font-size: 20px;
   line-height: 2.5rem;
   max-width: 600px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .icons {
@@ -563,7 +577,7 @@ footer {
 }
 
 .copyright {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #828282;
   padding: 0 24px;
 }
