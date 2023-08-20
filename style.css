@@ -314,7 +314,7 @@ h1.dark {
 }
 
 .primary-info img {
-  max-width: 65%;
+  max-width: 77%;
 }
 
 .primary-write {
@@ -511,7 +511,7 @@ li p {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  gap: 7rem;
+  gap: 2rem;
   margin: 4rem auto;
 }
 
